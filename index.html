@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🚀 TiffyAI Game Stamp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #08001a, #1f003d);
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .stamp {
+      background: rgba(0, 0, 20, 0.85);
+      border: 2px solid #0ff;
+      border-radius: 15px;
+      width: 320px;
+      box-shadow: 0 0 20px #0ff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .stamp img {
+      width: 100%;
+      display: block;
+    }
+
+    .stamp h1 {
+      font-size: 1.1rem;
+      margin: 10px 0;
+      padding: 0 15px;
+    }
+
+    .stamp p {
+      font-size: 0.85rem;
+      padding: 0 15px 15px;
+      color: #ccc;
+    }
+
+    .launch-btn {
+      background: #00f0ff;
+      color: black;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 12px 25px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .launch-btn:hover {
+      background: #00b8cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="stamp">
+    <img src="https://tiffyai.github.io/Start/floating.gif" alt="TiffyAI">
+    <h1>🚀 TIFFYAI FAUCET IS LIVE!</h1>
+    <p>Claim FREE $TIFFY every 10 min. Play, stack, cash out. MetaMask, Trust Wallet & OKX ready. 🎮</p>
+    <button class="launch-btn" onclick="launchGame()">🔓 Launch Game</button>
+  </div>
+
+  <script>
+    function launchGame() {
+      const intentURL = 'intent://tiffyai.github.io/portal/#Intent;scheme=https;package=com.android.chrome;end';
+      window.location.href = intentURL;
+    }
+  </script>
+</body>
+</html>
